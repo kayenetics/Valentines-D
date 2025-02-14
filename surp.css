@@ -1,0 +1,31 @@
+.button a{
+  text-align: center;
+    text-decoration:solid;
+    color:black;
+    background: rgb(228, 126, 174);
+    padding: 10px 25px;
+    box-sizing: 10px;
+    border-radius: 10px;
+    box-shadow:black;
+    display:flex;
+    border: 10px black;
+    width: 100px;
+    border-radius: 25px;
+    margin-bottom: 0.5%;
+     cursor: pointer;
+     transition-property:initial;
+     transition-duration: 0.5s;
+     transition-timing-function: ease;
+     transition:width 1s;
+    }
+  
+  .button a:hover{
+    text-align:center;
+width: 150px;
+padding: 10px 10px;
+font-size: 1rem;
+cursor: pointer;
+border: #000000;
+height:45px;
+border-radius: 25px;
+  }

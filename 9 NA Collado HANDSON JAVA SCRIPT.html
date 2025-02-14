@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello JavaScript</title>
+    <style>
+    body 
+    {
+        background-image:
+         url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQup6_IDjPuAc3DZO9N3KHs6vkhHn1cV8SBKg&s);
+        }
+        
+
+     h1 
+     {
+        text-align: left;  
+            ; font-size: 70px;
+            }
+     p {
+        text-align: center; 
+        font-size: 20px;
+    }
+
+     button 
+     { 
+        color: rgb(0, 14, 14);
+        border-color: rgb(4, 4, 5);
+        font-family:Impact;
+        background-color: rgb(178, 221, 159);
+        margin: 0;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-60%, -50%);
+        width: 110px;
+        box-sizing: border-box;
+        
+     }
+    </style>
+</head>
+<body>
+    <h1>Welcome to JavaScript Basics</h1>
+    <p id="output">Let's learn something cool!</p>
+    <button onclick="Functio()" id="changeText">CLICK CLICK!</button>
+
+    <script>
+     let x = "This website is not a scam!!"
+        console.log(x);
+        document.getElementById("output").innerHTML = "CLICK THE BUTTON FOR FREE ROBUX";
+
+        function Functio() {
+            document.getElementById("output").innerHTML = "Your robux is processing...";}
+        
+    
+    </script>
+</body>
+</html>

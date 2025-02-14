@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let correctAnswer;
+        function generateQuestion() {
+
+            const num1 = Math.floor(Math.random()* 6) + 3;
+            const num2 = Math.floor(Math.random()* 6) + 1;
+
+            correctAnswer = num1 +num2;
+
+            const questionDiv = document.getElementById('question');
+            questionDiv.innerHTML = `${num1} + ${num2} = ?`;
+        }
+           input.addEventListener('keypress', (event => {
+            if(event.key === 'Enter') {
+                let sum = parseInt{num1/innerHtml} + parseInt(num2.innerHTML)
+                let response = parseInt(input.value)
+
+            if(sum === response) {
+                count++
+                score.innerHTML = count
+                num1.innerHTML = Math.ceil(Math.random( * 10)
+                num2.innerHTML = Math.ceil(Math.random() * 10)
+            }
+
+            
+            }}
+        
+        </script>
+</body>
+</html>

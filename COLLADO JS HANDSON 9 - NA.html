@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Endless Addition Quiz!</title>
+</head>
+<body>
+    <style>
+        p{
+            font-size: 20px;
+            text-align: center;
+        }
+        body{
+            background-color: #189bcc;
+        }
+        #mama{
+            font-size: 50px;
+            color:rgb(190,204,65);
+            text-align: center;
+    
+        }
+        #Ehe{
+            text-align: center;
+            font-size: large;
+            size: 10px;
+        }
+        #Abba{
+            text-align: center;
+        }
+
+        </style>
+        
+<div>
+    <div id ="mama">
+        <h1> The Endless Addition Quiz!</h1>
+    </div>
+    <p> Hello and welcome to the endless addition quiz!, Reload the page once you've gotten a correct answer. (Yes, the colors are from Weezer.)</p>
+<div id = "Abba">
+    <div id="question"></div>
+    <input type = "number" id ="userAnswer" placeholder="Your answer" />
+</div>
+
+<div id = "Ehe">
+    <button id="checkButton", style ="background-color: #189bcc;;"> Check Answer</button>
+    <div id="result"></div>
+
+    <script src="java script quiz.js"></script>
+</div>
+
+<script>
+        let correctAnswer;
+        function generateQuestion() {
+
+        const num1 = Math.floor(Math.random() *6) + 3;
+       const num2 = Math.floor(Math.random() *6) + 1;
+
+        correctAnswer = num1 + num2;
+
+        const questionDiv = document.getElementById('question');
+        questionDiv.innerHTML = `${num1} + ${num2}= ?`;
+        }
+
+        function checkAnswer() {
+
+            const userAnswer = parseInt(document.getElementById('userAnswer').value);
+
+            const resultDiv = document.getElementById('result');
+            if (userAnswer === correctAnswer) {
+                resultDiv.innerHTML = "Woohoo! You got it right! Reload the page for a new problem!";
+        } else {
+                resultDiv.innerHTML = "Sorry, But that is wrong, the answer is " + correctAnswer + "try again!";
+            }
+    
+        };
+
+        window.onload = function() {
+            generateQuestion();
+            document.getElementById('checkButton').onclick = checkAnswer;
+
+        };
+    </script>
+</body>
+</html>
